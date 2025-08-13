@@ -3,13 +3,14 @@ using UnityEngine;
 
 public abstract class Shape : MonoBehaviour
 {
+    //ENCAPSULATION
     public string shapeName { get; set; }
     public Color shapeColor { get; set; }
     public string colorName { get; set; }
     public TMP_Text text { get; set; }
     private Renderer rend;
 
-    protected virtual void Start()
+    protected virtual void Start() //ABSTRACTION
     {
         text = GameObject.Find("Text").GetComponent<TMP_Text>();
         rend = GetComponent<Renderer>();
@@ -19,10 +20,10 @@ public abstract class Shape : MonoBehaviour
         }
     }
 
-    private void OnMouseDown()
+    private void OnMouseDown() //ABSTRACTION
     {
         DisplayText();
     }
 
-    public abstract void DisplayText();
+    public abstract void DisplayText(); //POLYMORPHISM + INHERITANCE
 }

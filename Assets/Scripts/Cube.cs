@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Cube : Shape
+public class Cube : Shape //INHERITANCE
 {
     protected override void Start()
     {
