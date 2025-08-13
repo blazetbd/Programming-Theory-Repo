@@ -12,6 +12,8 @@ public class Cube : Shape
 
     public override void DisplayText()
     {
-        Debug.Log("This is a " + shapeName + ". It is a normal, boring " + colorName + ".");
+        string textToDisplay = "This is a " + shapeName + ". It is a normal, boring " + colorName + ".";
+        Debug.Log(textToDisplay);
+        text.text = textToDisplay;
     }
 }

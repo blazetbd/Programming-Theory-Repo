@@ -12,6 +12,8 @@ public class Cylinder : Shape
 
     public override void DisplayText()
     {
-        Debug.Log("This is a " + shapeName + ". It is a bright " + colorName + ".");
+        string textToDisplay = "This is a " + shapeName + ". It is a bright " + colorName + ".";
+        Debug.Log(textToDisplay);
+        text.text = textToDisplay;
     }
 }

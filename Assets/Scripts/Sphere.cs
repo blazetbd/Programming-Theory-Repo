@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Sphere : Shape
 {
@@ -12,6 +13,8 @@ public class Sphere : Shape
 
     public override void DisplayText()
     {
-        Debug.Log("This is a round " + shapeName + ". It is an intense " + colorName + ".");
+        string textToDisplay = "This is a round " + shapeName + ". It is an intense " + colorName + ".";
+        Debug.Log(textToDisplay);
+        text.text = textToDisplay;
     }
 }
