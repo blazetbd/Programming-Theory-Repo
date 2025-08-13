@@ -4,6 +4,7 @@ public abstract class Shape : MonoBehaviour
 {
     public string shapeName { get; set; }
     public Color shapeColor { get; set; }
+    public string colorName { get; set; }
 
     private Renderer rend;
 
