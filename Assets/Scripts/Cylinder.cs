@@ -6,11 +6,12 @@ public class Cylinder : Shape
     {
         shapeName = "Cylinder";
         shapeColor = Color.yellow;
+        colorName = "yellow";
         base.Start();
     }
 
     public override void DisplayText()
     {
-        Debug.Log("This is a " + shapeName + ". It is a bright " + shapeColor + ".");
+        Debug.Log("This is a " + shapeName + ". It is a bright " + colorName + ".");
     }
 }
